@@ -107,38 +107,67 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Kancharla Narmadha
 RegisterNumber: 212222110016 
-*/
+
+# SR flipflop
+```
+module flipflop(s,r,q,qbar,clk);
+input s,r,clk;
+output reg q,qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
+begin
+q=s|(q&(~r));
+qbar=r|(qbar&(~s));
+end
+endmodule
+```
+# Jk flipflop
+```
+module ex05(s,r,q,qbar,clk);
+input s,r,clk;
+output reg q,qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
+begin
+q=s|(q&(~r));
+qbar=r|(qbar&(~s));
+end
+endmodule
+```
 
 
 
 
 
 
-### RTL LOGIC FOR FLIPFLOPS 
+### RTL DIAGRAM FOR FLIPFLOPS 
 
-
+# SR flipflop
 ![flipflop rtl](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/5cad97ad-a6bf-4e52-99c1-54934c26e401)
 
 
-
+# JK flipflop
 ![JK flipflop rtl](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/c15afd33-a226-4755-9e0c-9bc035ae48b3)
 
 
 
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
+### OUTPUT WAVEFORM FOR FLIP FLOPS 
 
-
+# SR flipflop
 ![waveform flipflop](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/e979f856-5797-4040-91cf-17372684b145)
 
-![JK wavefprm](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/2e46c313-3691-452c-9086-607c5e6d233a)
+# JK flipflop
 
 
 
+![jk waveform](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/666fe776-a9cd-4b66-bc89-a9876b966d9a)
 
 
 
