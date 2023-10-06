@@ -140,6 +140,21 @@ qbar=r|(qbar&(~s));
 end
 endmodule
 ```
+# D flipflop
+```
+module expD(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
+endmodule 
+```
 
 
 
@@ -155,6 +170,8 @@ endmodule
 # JK flipflop
 ![JK flipflop rtl](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/c15afd33-a226-4755-9e0c-9bc035ae48b3)
 
+# D flipflop
+![rtl of d 1 1](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/fb64717b-c086-49a7-9c8e-ba1f828c2bf5)
 
 
 
@@ -164,11 +181,12 @@ endmodule
 ![waveform flipflop](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/e979f856-5797-4040-91cf-17372684b145)
 
 # JK flipflop
-
-
-
 ![jk waveform](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/666fe776-a9cd-4b66-bc89-a9876b966d9a)
+ 
+ # D flipflop
+![waveform of D](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/f9877c7b-373f-4062-ae97-c4d08ff0cc5b)
 
+ 
 
 
 ### RESULTS 
