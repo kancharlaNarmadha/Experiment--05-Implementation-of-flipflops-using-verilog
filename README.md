@@ -190,3 +190,4 @@ endmodule
 
 
 ### RESULTS 
+All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
