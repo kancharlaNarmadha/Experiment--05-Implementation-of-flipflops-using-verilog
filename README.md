@@ -1,3 +1,5 @@
+# NAME:KANCHARLA NARMADHA
+# REGISTER NUMBER: 212222110016
 # Experiment--05-Implementation-of-flipflops-using-verilog
 ### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
@@ -102,8 +104,18 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
 
+1.Create a project with required entities.
+
+2.Create a module along with respective file name.
+
+3.Run the respective programs for the given boolean equations.
+
+4.Run the module and get the respective RTL outputs.
+
+5.Create university program(VWF) for getting timing diagram.
+
+6.Give the respective inputs for timing diagram and obtain the results.
 
 
 ### PROGRAM 
@@ -128,15 +140,16 @@ endmodule
 ```
 # Jk flipflop
 ```
-module ex05(s,r,q,qbar,clk);
-input s,r,clk;
-output reg q,qbar;
+module jk(k,j,q,qbar,clk);
+input k,j,clk;
+output reg q;
+output reg qbar;
 initial q=0;
 initial qbar=1;
 always @ (posedge clk)
 begin
-q=s|(q&(~r));
-qbar=r|(qbar&(~s));
+q=((~q)&j)|(q&~k);
+qbar=(~qbar&k)|(qbar&~j);
 end
 endmodule
 ```
@@ -155,7 +168,21 @@ Qbar=~D;
 end
 endmodule 
 ```
-
+# T-flipflop
+```
+module t(T,clk,q,qbar);
+input T,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
+begin
+q=(T&(~q))|((~T)&q);
+qbar=(~q);
+end
+endmodule
+```
 
 
 
@@ -173,6 +200,8 @@ endmodule
 # D flipflop
 ![rtl of d 1 1](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/fb64717b-c086-49a7-9c8e-ba1f828c2bf5)
 
+# T flipflop
+![image](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/3fd2d3ba-a128-4d92-a65f-f6cc7d254203)
 
 
 ### OUTPUT WAVEFORM FOR FLIP FLOPS 
@@ -185,6 +214,13 @@ endmodule
  
  # D flipflop
 ![waveform of D](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/f9877c7b-373f-4062-ae97-c4d08ff0cc5b)
+
+# T flipflop
+![image](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/319e6a75-b71a-4c2e-ab92-66dec2bbbaf6)
+
+# RESULT:
+Hence all the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
+
 
  
 
