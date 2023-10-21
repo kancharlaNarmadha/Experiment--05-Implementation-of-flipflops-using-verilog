@@ -1,6 +1,6 @@
 # NAME:KANCHARLA NARMADHA
 # REGISTER NUMBER: 212222110016
-# Experiment--05-Implementation-of-flipflops-using-verilog
+# Experiment 05 Implementation of flipflops using verilog
 ### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
@@ -207,7 +207,8 @@ endmodule
 ### OUTPUT WAVEFORM FOR FLIP FLOPS 
 
 # SR flipflop
-![waveform flipflop](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/e979f856-5797-4040-91cf-17372684b145)
+![image](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/8ec57dff-9500-44dd-ab28-54054c9e1183)
+
 
 # JK flipflop
 ![jk waveform](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/666fe776-a9cd-4b66-bc89-a9876b966d9a)
