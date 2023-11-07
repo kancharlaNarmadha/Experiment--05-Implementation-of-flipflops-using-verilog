@@ -219,12 +219,5 @@ endmodule
 # T flipflop
 ![image](https://github.com/kancharlaNarmadha/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119559316/319e6a75-b71a-4c2e-ab92-66dec2bbbaf6)
 
-# RESULT:
-Hence all the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
-
-
- 
-
-
 ### RESULTS 
 All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
